@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lL-K7-Wep">
+                                <rect key="frame" x="71" y="318.5" width="233" height="30"/>
+                                <state key="normal" title="跳转到AppStore对应应用评论页面"/>
+                                <connections>
+                                    <action selector="appStoreComentBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ma-hN-a9R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ar-bg-eAR">
+                                <rect key="frame" x="95.5" y="398.5" width="184" height="30"/>
+                                <state key="normal" title="应用内评分（系统评分框）"/>
+                                <connections>
+                                    <action selector="webAppStoreBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="URJ-Ao-qe0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NxR-Fi-CNy">
+                                <rect key="frame" x="95.5" y="238.5" width="184" height="30"/>
+                                <state key="normal" title="应用内评分（系统评分框）"/>
+                                <connections>
+                                    <action selector="systemComentBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qQ2-Mq-LUZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7lL-K7-Wep" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="B16-xB-W0J"/>
+                            <constraint firstItem="3ar-bg-eAR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K3B-vH-v20"/>
+                            <constraint firstItem="3ar-bg-eAR" firstAttribute="top" secondItem="7lL-K7-Wep" secondAttribute="bottom" constant="50" id="Nqz-iY-aR2"/>
+                            <constraint firstItem="7lL-K7-Wep" firstAttribute="top" secondItem="NxR-Fi-CNy" secondAttribute="bottom" constant="50" id="aor-jS-H3d"/>
+                            <constraint firstItem="7lL-K7-Wep" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="glT-8Z-P15"/>
+                            <constraint firstItem="NxR-Fi-CNy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qAG-ZK-xGg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
